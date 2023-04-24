@@ -1,4 +1,4 @@
-name: Deploy ddocs
+name: Deploy docs
 
 on: 
   push:
@@ -23,7 +23,7 @@ jobs:
 
       - run: npm run build
         env:
-          TURBO_TOKEN: n2poFIJZu2MP3ImOq1tNJoIZ
+          TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           TURBO_TEAM: mrsjohnnobody
 
       - name: Deploy storybook
