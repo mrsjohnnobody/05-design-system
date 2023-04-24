@@ -1,0 +1,2 @@
+import{A as t}from"./index.6bcfa33a.js";import"./index.e4ae9b91.js";import"./index.2412e076.js";import"./iframe.7d1905fa.js";import"./index.071db635.js";import"./jsx-runtime.340e1ba1.js";const p={title:"Data display/Avatar",component:t,args:{src:"https://github.com/mrsjohnnobody.png",alt:"Joao Victor"}},c={},n={args:{src:void 0}},l=["Primary","WithFallback"];export{c as Primary,n as WithFallback,l as __namedExportsOrder,p as default};
+//# sourceMappingURL=Avatar.stories.2264e872.js.map
