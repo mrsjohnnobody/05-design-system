@@ -1,31 +1,27 @@
 module.exports = {
   "stories": [
-    "../src/pages/**/*.stories.mdx", 
-    "../src/stories/*.stories.tsx"
+    "../src/pages/**/*.stories.mdx",
+    "../src/stories/**/*.stories.tsx"
   ],
   "addons": [
-    "@storybook/addon-links", 
-    "@storybook/addon-essentials", 
-    "@storybook/addon-interactions", 
-    "@storybook/addon-a11y", 
-    "@storybook/addon-mdx-gfm",
-    'storybook-dark-mode'],
-  "framework": {
-    name: "@storybook/react-vite",
-    options: {}
+    "@storybook/addon-links",
+    "@storybook/addon-essentials",
+    "@storybook/addon-interactions",
+    "@storybook/addon-a11y",
+    'storybook-dark-mode'
+  ],
+  "framework": "@storybook/react",
+  "core": {
+    "builder": "@storybook/builder-vite"
   },
   "features": {
     "storyStoreV7": true
   },
-  viteFinal: (config, {
-    configType
-  }) => {
+  viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
-      config.base = '/05-design-system/';
+      config.base = '/05-design-system/'
     }
-    return config;
-  },
-  docs: {
-    autodocs: true
+
+    return config
   }
-};
+}
